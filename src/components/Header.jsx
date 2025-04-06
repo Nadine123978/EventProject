@@ -23,7 +23,7 @@ const Header = ({ title, subtitle, isCollapsed }) => {
       mb="30px"
       width="100%"
       sx={{
-        backgroundColor: colors.primary[300],
+        backgroundColor: colors.primary[400],
         borderRadius: "25px",
         padding: "15px", // تعديل المسافات لتكون متناسقة
         boxShadow: "0px 4px 10px rgba(0,0,0,0.2)", // لإضافة تأثير الظل

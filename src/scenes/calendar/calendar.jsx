@@ -52,7 +52,7 @@ const Calendar = () => {
       .length,
   };
 
-  const renderTopCounters = () => {
+  const RenderTopCounters = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     return (
@@ -110,7 +110,7 @@ const Calendar = () => {
     }
   };
 
-  const renderEventContent = (eventInfo) => {
+  const RenderEventContent = (eventInfo) => {
     const bgColor = eventColor(eventInfo.event.extendedProps?.category);
     return (
       <div
@@ -131,7 +131,7 @@ const Calendar = () => {
   return (
     <Box p="24px">
       <Header title="Calendar" subtitle="Full Calendar Interactive Page" />
-      {renderTopCounters()}
+      {RenderTopCounters()}
 
       <Box
         mb="16px"
@@ -171,7 +171,7 @@ const Calendar = () => {
         select={handleDateClick}
         eventClick={handleEventClick}
         eventsSet={(events) => setCurrentEvents(events)}
-        eventContent={renderEventContent}
+        eventContent={RenderEventContent}
         initialEvents={[
           {
             id: "1",

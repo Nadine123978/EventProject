@@ -2,7 +2,6 @@ import { Typography, Box, IconButton, useTheme } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
 import { useContext } from "react";
 import { ColorModeContext, tokens } from "../theme";
-
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
@@ -23,7 +22,7 @@ const Header = ({ title, subtitle, isCollapsed }) => {
       mb="30px"
       width="100%"
       sx={{
-        backgroundColor: colors.primary[400],
+        backgroundColor: colors.primary[300],
         borderRadius: "25px",
         padding: "15px", // تعديل المسافات لتكون متناسقة
         boxShadow: "0px 4px 10px rgba(0,0,0,0.2)", // لإضافة تأثير الظل

@@ -10,24 +10,24 @@ const Invoices = () => {
   const columns = [
     { field: "id", headerName: "InvoiceID" },
     {
-      field: "name",
+      field: "Date",
+      headerName: "Date",
+      flex: 1,
+    },
+    {
+      field: "Name",
       headerName: "Name",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "Event",
+      headerName: "Event",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
-      flex: 1,
-    },
-    {
-      field: "cost",
-      headerName: "Cost",
+      field: "Qty",
+      headerName: "Qty",
       flex: 1,
       renderCell: (params) => (
         <Typography color={colors.greenAccent[500]}>
@@ -36,8 +36,13 @@ const Invoices = () => {
       ),
     },
     {
-      field: "date",
-      headerName: "Date",
+      field: "Amount",
+      headerName: "Amount",
+      flex: 1,
+    },
+    {
+      field: "Status",
+      headerName: "Status",
       flex: 1,
     },
   ];
